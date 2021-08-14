@@ -1,0 +1,67 @@
+O modelo original usava uma base de dados com +- 2000 itens por categoria e 4 categorias
+tinha uma precisão de 98%
+
+Usando o mesmo modelo na minha base de dados com 4 categorias e 2000 itens por categoria, chegamos nos mesmos resultados
+
+Usando com 12 categorias (com 3 tendo menos de 2000 itens), a precisão cai pra 90%
+
+usando apenas com 9 categorias não muda o valor
+
+usando batchs de 32, ganha-se 1%
+
+usar só 10 epochs, 15 é too much
+
+usando dataset com 3000 itens em cada categoria, ganhamos 1%
+
+Usando dropout, o overfitting rapido foi corrigido, mas será necessário mais epoch e uma velocidade maior de processamento
+
+Adicionar BatchNormalization Layers
+
+não funcionou muito bem, estudar mais sobre formas de regularizar.
+
+E essa porra tá comendo armazenamento, carai
+
+no fim, aumentei a complexidade adicionando mais um layer, ficou bem melhor e não usei nem dropout nem BatchNormalization
+
+refazer os testes apropriadamente logando os valores
+Reorganizei os datasets de um jeito mais organizado
+
+usando apenas um dataset (8_categories_3000_items)
+
+definição dos experimentos:
+
+----variar batchsize----
+8_categories_3000_items, batch size 64, 2 conv2D Layers, divisão 80/20, 64 neurons em cada layer (Sequential_Model_2021_07_28_13_32_31_dataset_8_categories_3000_items)
+8_categories_3000_items, batch size 128, 2 conv2D Layers, divisão 80/20, 64 neurons em cada layer (Sequential_Model_2021_07_28_14_43_11_dataset_8_categories_3000_items)
+8_categories_3000_items, batch size 32, 2 conv2D Layers, divisão 80/20, 64 neurons em cada layer (Sequential_Model_2021_07_28_16_08_53_dataset_8_categories_3000_items)
+8_categories_3000_items, batch size 16, 2 conv2D Layers, divisão 80/20, 64 neurons em cada layer (Sequential_Model_2021_07_28_17_18_19_dataset_8_categories_3000_items)
+---- mudar test/train split ----
+8_categories_3000_items, batch size 16, 2 conv2D Layers, divisão 90/10, 64 neurons em cada layer (Sequential_Model_2021_07_28_19_40_42_dataset_8_categories_3000_items)
+---- adicionar 1 layer (melhor resultado)----
+8_categories_3000_items, batch size 16, 3 conv2D Layers, divisão 90/10, 64 neurons em cada layer (Sequential_Model_2021_07_28_20_46_38_dataset_8_categories_3000_items)
+---- aumentar número de neuros por camada ----
+8_categories_3000_items, batch size 16, 3 conv2D Layers, divisão 90/10, 128 neurons em cada layer (Sequential_Model_2021_07_28_22_24_29_dataset_8_categories_3000_items)
+---- mais uma Conv2D layer ----
+8_categories_3000_items, batch size 16, 4 conv2D Layers, divisão 90/10, 128 neurons em cada layer (Sequential_Model_2021_07_29_07_27_39_dataset_8_categories_3000_items)
+---- mais uma dense layer ----
+8_categories_3000_items, batch size 16, 3 conv2D Layers,3 dense layers, divisão 90/10, 128 neurons em cada layer (Sequential_Model_2021_07_29_09_21_51_dataset_8_categories_3000_items)
+
+---- após perceber que 32 funcionou melhor que 16 no primeiro teste, mas não foi melhor nesse aqui----
+8_categories_3000_items, batch size 32, 3 conv2D Layers, divisão 90/10, 64 neurons em cada layer (Sequential_Model_2021_08_04_21_01_10_dataset_8_categories_3000_items)
+
+resultados logados na pasta TCC/logs
+
+TODO:
+
+usar a matriz de confusão do melhor modelo
+descrever o experimento no modelo de artigo
+explanar os resultados
+montar a conclusão
+montar a introdução
+montar o resume/abstract
+revisão bibliográfica
+
+DONE:
+Consolidar logs
+montar gráficos de resultados (loss, val_loss, accuracy, val_accuracy)
+revisar o gráfico da arquitetura da AI
