@@ -1,0 +1,56 @@
+Invoke-WebRequest -O MCB_A.tar.gz -Uri "https://public.boxcloud.com/d/1/b1!zweYpnCtMPMbW9ExZ19_lsXwvz5ZqRpLqIdGS2ktSp5z71hEOrnsxQ7CPmhNsDJDTd3NSh5HBjf8RHv9ioOxIzGcz_xLCSLjuHj6ISCaPX-uWjrhGOe927ZeS0cG296Z-u8Gsos0x01BLkvQLMKwzXEkJvCvu-O0N5WqZI2wHVz7Zs0R5-hXixQl9TOe1NEyoPP7KYI_eqtJkhu1B6vhSk8GPszDy9dBEBR2VmfUHqOUC3kYdApmM0_QhYyzuz7XVULZrnlx04EZFJKCzNNm_fxCECma4SiL7l6PE0B10o_2uDhoQxHNWYm0WQmvb6UDcqVJJ-JCp2QBrbxvbt8toHCIluLV6Tl0rEKTWNdAb4E9tivw6kZOH-4kqHYiNlLGwdrJ9Tl4rbJ0tn0az95naiEnL7gpS8RvyL4OHxOTPEduR4ZaMO-cDjY3KrRzMAxyq3Q7dfmYQRC90RSbwt3BWv1J60FObzLNF15f7qjgZhdtJqREyBfDX-jjMfXMO1BXNDDAI87q8hnBjmCkA85KI_qJx4IylsxVFCcXUE8iBIVdfTMy3dAqIwLMLQGfZfLulGM5vjcI5GtHjbu9Zr4plhDWnd8ISg_NUqMSaVv3nwQVv5sVqNDJLLux-pQ-OyZ03P7KutZDzh_paUTB2U1_zIbg_VJHbkn7c26PVeIIai_TvfJhGEHe33VyDHgGqrOlKbCdnv6EXhAKxwdc2RnQmrRMQHn3OLc4ugF_9k5XeeWVrV7YJVRF4kCcD7pTz6RgjlfTDse3nc4hG42ikGLt83qdvWOPKKZ-wV2G-4c13BJ2b9zPwU3whvzWijWHCDtwMzNCWFLzoZENvEQ1Jbavv0PiXRT4vBVChez_462fQbc8_mqLZ-xF91FV3uIsKXlX4KmAVKIZLjWPXl75XVxJnCyYk1bvcCokwGiLjSKn8S3H9WNZ-2oqXBgw6_zFt1E879lkK-8ITyC1cyQQWfEwrB8EkCsXUy4OBcBvDFGdevJqEmGWJS2_nc_DqqZPJ7V_4x2FjLSRuvalx1mxVL3ae07uTGQiymW5KegkMQ0qgpHWthGKjCNfRCQWnZfsZwwXxFy6eF5QJ7qQ0z7Ks2QCfShhCmIhv_cb7JplQKjSa7kI-z0BzLFcm-1LeQRg4mTFuTs3M5F7aU0X77LInTg_LFZzIhbVrGeUX-h4_4XGmvwkneepPANj9Pp-BcDiN2uVRU8mcS3EzNnO3a_LW8GXLaTe526_hGrT91Ys-vIC_CueuSJBz6LznHFFv1jii938-GhaO2X4at0dh8J86YSeVkuR6B9s7pdtiDqEHPEUMIRztg092Y8./download" `
+-Method "HEAD" `
+-Headers @{
+"sec-ch-ua"="`" Not A;Brand`";v=`"99`", `"Chromium`";v=`"92`", `"Opera GX`";v=`"78`""
+  "Accept"="application/json, text/plain, */*"
+  "DNT"="1"
+  "sec-ch-ua-mobile"="?0"
+  "User-Agent"="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 OPR/78.0.4093.214"
+  "Origin"="https://app.box.com"
+  "Sec-Fetch-Site"="cross-site"
+  "Sec-Fetch-Mode"="cors"
+  "Sec-Fetch-Dest"="empty"
+  "Referer"="https://app.box.com/"
+  "Accept-Encoding"="gzip, deflate, br"
+  "Accept-Language"="en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,it-IT;q=0.6,it;q=0.5"
+}
+
+Invoke-WebRequest -O MCB_A.tar.gz -Uri "https://api.box.com/2.0/files/721820761571?fields=download_url" -Headers @{
+"sec-ch-ua"="`" Not A;Brand`";v=`"99`", `"Chromium`";v=`"92`", `"Opera GX`";v=`"78`""
+  "DNT"="1"
+  "X-Box-Client-Version"="2.79.0"
+  "X-Box-Client-Name"="box-content-preview"
+  "sec-ch-ua-mobile"="?0"
+  "Authorization"="Bearer 1!cIjQNIjbSB6rWmVWNKKoz68yhAtPUyMVu6K9nv2AAaYtjOlubNa7_Z1nZYi9F5GITuc9IBRc5YjPU6TNoVQxYqyKRvmXVfvJKwX5XESiTn3-MtDZgUJ50cwlkY6nGvpPnQSERMVg63h_ApgqsFXA_f5MsmX62mBpf3vdmfEoxqIwh6OLVEaO03khca__oHrShAh9u0BJhoXuIyVzjs4B-yF3-wDHovZfGo1Eb8Y_opiioZST2FH3FsdUvxVYf076V5DdETJ6Gnp1zUBPgQHr_jLrTfepoPkdZkV_fUeLg2G-wsYejEKZq4AqO9NM64rC69_Zb3NhdZPv8VUENR0pgpPvl_u0iiZqUJvvsZoEZlfUXMbdcawyKHPMOGBP2DWWJBRPqThD1EaK2eCW0iLMycXIT_LQx4NF2KZtrZynsy1FkIzicnbhBqyHg_d-4AtRm38HFLtI91JVczkRBtmfpqU0doUKh9oYcUne0p9shAjp-dDotXCINqgHUwt2OOzhrpQ9HT8h4JMlRR0It0eif0eGYtww0UPf1ajfqNdrMz8zMHkiCuIxNfC1rjex0k0."
+  "Accept"="application/json, text/plain, */*"
+  "User-Agent"="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 OPR/78.0.4093.214"
+  "X-Rep-Hints"="[3d][pdf][text][mp3][json][jpg?dimensions=1024x1024&paged=false][jpg?dimensions=2048x2048,png?dimensions=2048x2048][dash,mp4][filmstrip]"
+  "BoxApi"="shared_link=https://app.box.com/s/88y773jgavghihwcicio7nenpvcdo2e0"
+  "Origin"="https://app.box.com"
+  "Sec-Fetch-Site"="same-site"
+  "Sec-Fetch-Mode"="cors"
+  "Sec-Fetch-Dest"="empty"
+  "Referer"="https://app.box.com/"
+  "Accept-Encoding"="gzip, deflate, br"
+  "Accept-Language"="en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,it-IT;q=0.6,it;q=0.5"
+}
+
+Invoke-WebRequest -Uri "https://api.box.com/2.0/files/721820761571?fields=download_url" -Headers @{
+"sec-ch-ua"="`" Not A;Brand`";v=`"99`", `"Chromium`";v=`"92`", `"Opera GX`";v=`"78`""
+  "DNT"="1"
+  "X-Box-Client-Version"="2.79.0"
+  "X-Box-Client-Name"="box-content-preview"
+  "sec-ch-ua-mobile"="?0"
+  "Authorization"="Bearer 1!cIjQNIjbSB6rWmVWNKKoz68yhAtPUyMVu6K9nv2AAaYtjOlubNa7_Z1nZYi9F5GITuc9IBRc5YjPU6TNoVQxYqyKRvmXVfvJKwX5XESiTn3-MtDZgUJ50cwlkY6nGvpPnQSERMVg63h_ApgqsFXA_f5MsmX62mBpf3vdmfEoxqIwh6OLVEaO03khca__oHrShAh9u0BJhoXuIyVzjs4B-yF3-wDHovZfGo1Eb8Y_opiioZST2FH3FsdUvxVYf076V5DdETJ6Gnp1zUBPgQHr_jLrTfepoPkdZkV_fUeLg2G-wsYejEKZq4AqO9NM64rC69_Zb3NhdZPv8VUENR0pgpPvl_u0iiZqUJvvsZoEZlfUXMbdcawyKHPMOGBP2DWWJBRPqThD1EaK2eCW0iLMycXIT_LQx4NF2KZtrZynsy1FkIzicnbhBqyHg_d-4AtRm38HFLtI91JVczkRBtmfpqU0doUKh9oYcUne0p9shAjp-dDotXCINqgHUwt2OOzhrpQ9HT8h4JMlRR0It0eif0eGYtww0UPf1ajfqNdrMz8zMHkiCuIxNfC1rjex0k0."
+  "Accept"="application/json, text/plain, */*"
+  "User-Agent"="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36 OPR/78.0.4093.214"
+  "X-Rep-Hints"="[3d][pdf][text][mp3][json][jpg?dimensions=1024x1024&paged=false][jpg?dimensions=2048x2048,png?dimensions=2048x2048][dash,mp4][filmstrip]"
+  "BoxApi"="shared_link=https://app.box.com/s/88y773jgavghihwcicio7nenpvcdo2e0"
+  "Origin"="https://app.box.com"
+  "Sec-Fetch-Site"="same-site"
+  "Sec-Fetch-Mode"="cors"
+  "Sec-Fetch-Dest"="empty"
+  "Referer"="https://app.box.com/"
+  "Accept-Encoding"="gzip, deflate, br"
+  "Accept-Language"="en-US,en;q=0.9,pt-BR;q=0.8,pt;q=0.7,it-IT;q=0.6,it;q=0.5"
+}
